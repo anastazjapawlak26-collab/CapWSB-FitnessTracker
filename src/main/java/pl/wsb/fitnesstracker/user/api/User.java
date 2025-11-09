@@ -27,15 +27,12 @@ public class User {
     @Column(nullable = false, unique = true)
     private String email;
 
-    public User(
-            final String firstName,
-            final String lastName,
-            final LocalDate birthdate,
-            final String email) {
+    @Column
+    private String firstName;
 
-        this.birthdate = birthdate;
-        this.email = email;
-    }
+    @Column
+    private String lastName;
+
 
 }
 
